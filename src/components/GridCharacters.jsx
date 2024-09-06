@@ -10,8 +10,8 @@ export const GridCharacters = ({characters}) => {
                         characters &&
                             characters.map((char) => (
                                 <div key={char.id}>
-                                    <h5>{char.name}</h5>
-                                    <img style={{width: '100px'}} src={`${char.thumbnail.path}.${char.thumbnail.extension}`} alt=""></img>
+                                    <h5 className="text-center">{char.name}</h5>
+                                    <img style={{width: '200px'}} src={`${char.thumbnail.path}.${char.thumbnail.extension}`} alt=""></img>
                                 </div>
                             ))
                     }
